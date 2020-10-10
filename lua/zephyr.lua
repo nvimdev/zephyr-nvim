@@ -177,6 +177,24 @@ function zephyr.load_syntax()
     vimUserFunc = {fg=zephyr.yellow,style='bold'};
     vimFuncName= {fg=zephyr.yellow,style='bold'};
 
+    diffAdded = {fg = zephyr.green};
+    diffRemoved = {fg =zephyr.red};
+    diffChanged = {fg = zephyr.blue};
+    diffOldFile = {fg = zephyr.yellow};
+    diffNewFile = {fg = zephyr.orange};
+    diffFile    = {fg = zephyr.aqua};
+    diffLine    = {fg = zephyr.grey1};
+    diffIndexLine = {fg = zephyr.purple};
+
+    gitcommitSummary = {fg = zephyr.red};
+    gitcommitUntracked = {fg = zephyr.grey1};
+    gitcommitDiscarded = {fg = zephyr.grey1};
+    gitcommitSelected = { fg=zephyr.grey1};
+    gitcommitUnmerged = { fg=zephyr.grey1};
+    gitcommitOnBranch = { fg=zephyr.grey1};
+    gitcommitArrow  = {fg = zephyr.grey1};
+    gitcommitFile  = {fg = zephyr.green};
+
     VistaBracket = {fg=zephyr.grey1};
     VistaChildrenNr = {fg=zephyr.orange};
     VistaKind = {fg=zephyr.purpl};
