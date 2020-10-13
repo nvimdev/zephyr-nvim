@@ -220,9 +220,6 @@ function zephyr.load_syntax()
     SignifySignChange = {fg=zephyr.blue};
     SignifySignDelete = {fg=zephyr.red};
 
-    Floaterm = {fg=zephyr.none,bg=zephyr.bg0};
-    FloatermBorder = {fg=zephyr.blue,bg=zephyr.none};
-
     dbui_tables = {fg=zephyr.blue};
 
     DefxIconsParentDirectory = {fg=zephyr.orange};
@@ -246,6 +243,10 @@ function zephyr.load_syntax()
 end
 
 function zephyr.colorscheme()
+  vim.api.nvim_command('hi clear')
+  if vim.fn.exists('syntax_on') then
+    vim.api.nvim_command('syntax reset')
+  end
   vim.g.colors_name = 'zephyr'
   vim.o.background = 'dark'
   if vim.o.termguicolors ~= true then
