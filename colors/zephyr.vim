@@ -3,4 +3,4 @@
 " License: MIT
 " Source: http://github.com/glepnir/zephyr-nvim
 
-lua require('zephyr').colorscheme()
+lua require('zephyr')
