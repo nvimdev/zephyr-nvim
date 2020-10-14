@@ -5,7 +5,7 @@ A dark neovim colorscheme written in lua and syntax based on
 ### Usage
 
 ```lua
-lua require('zephyr').colorscheme()
+lua require('zephyr')
 ```
 or
 ```vim

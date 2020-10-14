@@ -263,4 +263,4 @@ function zephyr.colorscheme()
   end
 end
 
-return zephyr
+zephyr.colorscheme()
