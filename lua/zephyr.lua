@@ -26,7 +26,8 @@ local zephyr = {
   magenta = '#d16d9e';
   orange = '#da8548';
   yellow = '#d8a657';
-  green = '#98be65';
+  -- green = '#98be65';
+  green = '#5faf5f';
   cyan = '#56b6c2';
   blue = '#51afef';
   purple = '#ba8baf';
@@ -35,7 +36,7 @@ local zephyr = {
   brown = '#666660';
   black = '#000000';
 
-  bracket = '#93a1a1';
+  bracket = '#80A0C2';
   currsor_bg = '#4f5b66';
   none = 'NONE';
 }
@@ -111,6 +112,7 @@ function zephyr.load_syntax()
     Question = {fg=zephyr.yellow};
     NormalFloat = {fg=zephyr.base8,bg=zephyr.bg_highlight};
     TabLineFill = {style=zephyr.none};
+    TabLineSel = {bg=zephyr.blue};
     StatusLine = {fg=zephyr.base8,bg=zephyr.none,style=zephyr.none};
     StatusLineNC = {fg=zephyr.grey,bg=zephyr.none,style=zephyr.none};
     SpellBad = {fg=zephyr.red,bg=zephyr.none,style='undercurl'};
