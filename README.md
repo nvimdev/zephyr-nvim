@@ -13,5 +13,5 @@ colorscheme zephyr
 ```
 ### Preview
 
-![zephyr](https://user-images.githubusercontent.com/41671631/95203442-577bd200-0815-11eb-9cf9-47f5c5d1b15f.png)
+![zephyr](https://user-images.githubusercontent.com/41671631/97680910-667f3880-1ad2-11eb-9cc9-0d8fb8320d07.png)
 
