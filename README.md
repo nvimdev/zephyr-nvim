@@ -2,6 +2,14 @@
 A dark neovim colorscheme written in lua and syntax based on
 [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 
+### Install
+
+eg: vim-plug
+```vim
+Plug 'glepnir/zephyr-nvim'
+Plug 'nvim-treesitter/nvim-treesitter'
+```
+
 ### Usage
 
 ```lua
