@@ -238,6 +238,11 @@ function zephyr.load_syntax()
     LspDiagnosticsVirtualTextInformation = {fg=zephyr.blue};
     LspDiagnosticsVirtualTextHint = {fg=zephyr.cyan};
 
+    LspDiagnosticsUnderlineError = {fg=zephyr.red};
+    LspDiagnosticsUnderlineWarning = {fg=zephyr.yellow};
+    LspDiagnosticsUnderlineInformation = {fg=zephyr.blue};
+    LspDiagnosticsUnderlineHint = {fg=zephyr.cyan};
+
     CursorWord0 = {bg=zephyr.currsor_bg};
     CursorWord1 = {bg=zephyr.currsor_bg};
 
