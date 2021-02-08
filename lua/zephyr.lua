@@ -266,7 +266,7 @@ function zephyr.colorscheme()
   if vim.fn.exists('syntax_on') then
     vim.api.nvim_command('syntax reset')
   end
-  -- vim.g.colors_name = 'zephyr'
+  vim.g.colors_name = 'zephyr'
   vim.o.background = 'dark'
   vim.o.termguicolors = true
 
