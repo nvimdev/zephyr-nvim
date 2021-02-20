@@ -162,7 +162,12 @@ function zephyr.load_syntax()
     Delimiter = {fg=zephyr.fg};
     Ignore = {fg=zephyr.grey};
     Underlined = {fg=zephyr.none,style='underline'};
+  }
+  return syntax
+end
 
+function zephyr.load_plugin_syntax()
+  local plugin_syntax = {
     TSFunction = {fg=zephyr.yellow,style='bold'};
     TSMethod = {fg=zephyr.yellow,style='bold'};
     TSKeywordFunction = {fg=zephyr.blue};
@@ -254,8 +259,19 @@ function zephyr.load_syntax()
     TelescopeBorder = {fg=zephyr.teal};
     TelescopePromptBorder = {fg=zephyr.blue}
   }
-  return syntax
+  return plugin_syntax
 end
+
+local async_load_plugin
+
+async_load_plugin = vim.loop.new_async(vim.schedule_wrap(function ()
+  zephyr.terminal_color()
+  local syntax = zephyr.load_plugin_syntax()
+  for group,colors in pairs(syntax) do
+    zephyr.highlight(group,colors)
+  end
+  async_load_plugin:close()
+end))
 
 function zephyr.get_zephyr_color()
   return zephyr
@@ -269,13 +285,11 @@ function zephyr.colorscheme()
   vim.o.background = 'dark'
   vim.o.termguicolors = true
   vim.g.colors_name = 'zephyr'
-
-  zephyr.terminal_color()
   local syntax = zephyr.load_syntax()
-
   for group,colors in pairs(syntax) do
     zephyr.highlight(group,colors)
   end
+  async_load_plugin:send()
 end
 
 zephyr.colorscheme()
