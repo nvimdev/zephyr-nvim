@@ -25,7 +25,7 @@ local zephyr = {
   red = '#ff6c6b';
   magenta = '#d16d9e';
   orange = '#da8548';
-  yellow = '#ECBE7B';
+  yellow = '#f0c674';
 
   green = '#98be65';
   cyan = '#3bb6c4';
@@ -149,7 +149,7 @@ function zephyr.load_syntax()
     Special = {fg=zephyr.yellow};
     SpecialChar = {fg=zephyr.yellow};
     Type = {fg=zephyr.yellow};
-    Function = {fg=zephyr.magenta,style='bold'};
+    Function = {fg=zephyr.blue};
     String = {fg=zephyr.green};
     Character = {fg=zephyr.green};
     Constant = {fg=zephyr.cyan};
@@ -168,8 +168,8 @@ end
 
 function zephyr.load_plugin_syntax()
   local plugin_syntax = {
-    TSFunction = {fg=zephyr.yellow,style='bold'};
-    TSMethod = {fg=zephyr.yellow,style='bold'};
+    TSFunction = {fg=zephyr.yellow};
+    TSMethod = {fg=zephyr.yellow};
     TSKeywordFunction = {fg=zephyr.blue};
     TSProperty = {fg=zephyr.cyan};
     TSType = {fg=zephyr.teal};
