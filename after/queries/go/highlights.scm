@@ -1,5 +1,5 @@
 ; keywords
 
-"func" @parameter
+"func" @keyword.function
 
 (nil) @boolean
