@@ -22,18 +22,19 @@ local zephyr = {
   fg = '#bbc2cf';
   fg_alt  = '#5B6268';
 
-  red = '#ff6c6b';
+  red = '#e95678';
   magenta = '#d16d9e';
-  orange = '#da8548';
+  orange = '#D98E48';
   yellow = '#f0c674';
-
   green = '#98be65';
-  cyan = '#3bb6c4';
+  cyan = '#44bcc9';
   blue = '#51afef';
+  dark_blue = '#6e87c4',
   violet = '#a9a1e1';
+  purple = '#b877db',
   teal = '#1abc9c';
   grey = '#928374';
-  brown = '#666660';
+  brown = '#fab795';
   black = '#000000';
 
   bracket = '#80A0C2';
@@ -135,7 +136,7 @@ function zephyr.load_syntax()
     Define = {fg=zephyr.violet};
     Conditional = {fg=zephyr.violet};
     Repeat = {fg=zephyr.violet};
-    Keyword = {fg=zephyr.red};
+    Keyword = {fg=zephyr.green};
     Typedef = {fg=zephyr.red};
     Exception = {fg=zephyr.red};
     Statement = {fg=zephyr.red};
@@ -149,8 +150,8 @@ function zephyr.load_syntax()
     Special = {fg=zephyr.yellow};
     SpecialChar = {fg=zephyr.yellow};
     Type = {fg=zephyr.yellow};
-    Function = {fg=zephyr.blue};
-    String = {fg=zephyr.green};
+    Function = {fg=zephyr.yellow};
+    String = {fg=zephyr.brown};
     Character = {fg=zephyr.green};
     Constant = {fg=zephyr.cyan};
     Macro = {fg=zephyr.cyan};
@@ -170,7 +171,7 @@ function zephyr.load_plugin_syntax()
   local plugin_syntax = {
     TSFunction = {fg=zephyr.yellow};
     TSMethod = {fg=zephyr.yellow};
-    TSKeywordFunction = {fg=zephyr.blue};
+    TSKeywordFunction = {fg=zephyr.red};
     TSProperty = {fg=zephyr.cyan};
     TSType = {fg=zephyr.teal};
     TSPunctBracket = {fg=zephyr.bracket};
@@ -178,7 +179,7 @@ function zephyr.load_plugin_syntax()
     vimCommentTitle = {fg=zephyr.grey,style='bold'};
     vimLet = {fg=zephyr.orange};
     vimVar = {fg=zephyr.cyan};
-    vimFunction = {fg=zephyr.magenta,style='bold'};
+    vimFunction = {fg=zephyr.magenta};
     vimIsCommand = {fg=zephyr.fg};
     vimCommand = {fg=zephyr.blue};
     vimNotFunc = {fg=zephyr.violet,style='bold'};
@@ -252,7 +253,7 @@ function zephyr.load_plugin_syntax()
     CursorWord0 = {bg=zephyr.currsor_bg};
     CursorWord1 = {bg=zephyr.currsor_bg};
 
-    NvimTreeFolderName = {fg=zephyr.blue};
+    NvimTreeFolderName = {fg=zephyr.dark_blue};
     NvimTreeRootFolder = {fg=zephyr.red};
     NvimTreeSpecialFile = {fg=zephyr.fg,bg=zephyr.none,stryle='NONE'};
 
