@@ -24,12 +24,12 @@ local zephyr = {
 
   red = '#e95678';
   magenta = '#d16d9e';
-  orange = '#da8548';
+  orange = '#D98E48';
   yellow = '#f0c674';
-
   green = '#98be65';
-  cyan = '#3bb6c4';
+  cyan = '#44bcc9';
   blue = '#51afef';
+  dark_blue = '#6e87c4',
   violet = '#a9a1e1';
   purple = '#b877db',
   teal = '#1abc9c';
@@ -150,7 +150,7 @@ function zephyr.load_syntax()
     Special = {fg=zephyr.yellow};
     SpecialChar = {fg=zephyr.yellow};
     Type = {fg=zephyr.yellow};
-    Function = {fg=zephyr.blue};
+    Function = {fg=zephyr.yellow};
     String = {fg=zephyr.brown};
     Character = {fg=zephyr.green};
     Constant = {fg=zephyr.cyan};
@@ -179,7 +179,7 @@ function zephyr.load_plugin_syntax()
     vimCommentTitle = {fg=zephyr.grey,style='bold'};
     vimLet = {fg=zephyr.orange};
     vimVar = {fg=zephyr.cyan};
-    vimFunction = {fg=zephyr.magenta,style='bold'};
+    vimFunction = {fg=zephyr.magenta};
     vimIsCommand = {fg=zephyr.fg};
     vimCommand = {fg=zephyr.blue};
     vimNotFunc = {fg=zephyr.violet,style='bold'};
@@ -253,7 +253,7 @@ function zephyr.load_plugin_syntax()
     CursorWord0 = {bg=zephyr.currsor_bg};
     CursorWord1 = {bg=zephyr.currsor_bg};
 
-    NvimTreeFolderName = {fg=zephyr.violet};
+    NvimTreeFolderName = {fg=zephyr.dark_blue};
     NvimTreeRootFolder = {fg=zephyr.red};
     NvimTreeSpecialFile = {fg=zephyr.fg,bg=zephyr.none,stryle='NONE'};
 
