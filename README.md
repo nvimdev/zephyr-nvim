@@ -26,6 +26,5 @@ lua require('zephyr').get_zephyr_color()
 ```
 ### Preview
 
-
-![zephyr2 0](https://user-images.githubusercontent.com/41671631/97704427-56288700-1aed-11eb-88fc-c26bdc0397f4.png)
+![zephyr2 0](https://user-images.githubusercontent.com/41671631/109389317-0cd72f80-7947-11eb-85ba-1f080c64550c.png)
 
