@@ -23,6 +23,7 @@ local zephyr = {
   fg_alt  = '#5B6268';
 
   red = '#e95678';
+  dark_red = '#ff6c6b';
   magenta = '#d16d9e';
   orange = '#D98E48';
   yellow = '#f0c674';
@@ -97,7 +98,7 @@ function zephyr.load_syntax()
     DiffDelete = {fg=zephyr.black,bg=zephyr.red};
     DiffText = {fg=zephyr.black,bg=zephyr.fg};
     Directory = {fg=zephyr.bg1,bg=zephyr.none};
-    ErrorMsg = {fg=zephyr.red,bg=zephyr.none,style='bold'};
+    ErrorMsg = {fg=zephyr.dark_red,bg=zephyr.none,style='bold'};
     WarningMsg = {fg=zephyr.yellow,bg=zephyr.none,style='bold'};
     ModeMsg = {fg=zephyr.fg,bg=zephyr.none,style='bold'};
     MatchParen = {fg=zephyr.red,bg=zephyr.none};
@@ -221,7 +222,7 @@ function zephyr.load_plugin_syntax()
 
     SignifySignAdd = {fg=zephyr.green};
     SignifySignChange = {fg=zephyr.blue};
-    SignifySignDelete = {fg=zephyr.red};
+    SignifySignDelete = {fg=zephyr.dark_red};
 
     dbui_tables = {fg=zephyr.blue};
 
