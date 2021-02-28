@@ -29,7 +29,6 @@ local zephyr = {
   green = '#98be65';
   cyan = '#44bcc9';
   blue = '#51afef';
-  dark_blue = '#6e87c4',
   violet = '#a9a1e1';
   purple = '#b877db',
   teal = '#1abc9c';
@@ -132,7 +131,7 @@ function zephyr.load_syntax()
     Float = {fg=zephyr.violet};
     PreProc = {fg=zephyr.violet};
     PreCondit = {fg=zephyr.violet};
-    Include = {fg=zephyr.violet};
+    Include = {fg=zephyr.purple};
     Define = {fg=zephyr.violet};
     Conditional = {fg=zephyr.violet};
     Repeat = {fg=zephyr.violet};
@@ -253,7 +252,7 @@ function zephyr.load_plugin_syntax()
     CursorWord0 = {bg=zephyr.currsor_bg};
     CursorWord1 = {bg=zephyr.currsor_bg};
 
-    NvimTreeFolderName = {fg=zephyr.dark_blue};
+    NvimTreeFolderName = {fg=zephyr.bracket};
     NvimTreeRootFolder = {fg=zephyr.red};
     NvimTreeSpecialFile = {fg=zephyr.fg,bg=zephyr.none,stryle='NONE'};
 
