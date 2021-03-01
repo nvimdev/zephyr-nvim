@@ -22,19 +22,23 @@ local zephyr = {
   fg = '#bbc2cf';
   fg_alt  = '#5B6268';
 
-  red = '#e95678';
-  dark_red = '#ff6c6b';
+  red = '#c74663';
+
   magenta = '#d16d9e';
   orange = '#D98E48';
   yellow = '#f0c674';
-  green = '#98be65';
-  cyan = '#44bcc9';
+
+  light_green = '#b2c79b';
+  green = '#a0c402';
+  dark_green = '#98be65';
+
+  cyan = '#4ad2e0';
   blue = '#51afef';
-  violet = '#a9a1e1';
+  violet = '#af87d7';
   purple = '#b877db',
   teal = '#1abc9c';
   grey = '#928374';
-  brown = '#ebb498';
+  brown = '#c78665';
   black = '#000000';
 
   bracket = '#80A0C2';
@@ -81,7 +85,7 @@ function zephyr.load_syntax()
     Folded = {fg=zephyr.grey,bg=zephyr.bg_highlight};
     EndOfBuffer = {fg=zephyr.bg,bg=zephyr.none};
     IncSearch = {fg=zephyr.bg1,bg=zephyr.orange,style=zephyr.none};
-    Search = {fg=zephyr.bg,bg=zephyr.green};
+    Search = {fg=zephyr.bg,bg=zephyr.orange};
     ColorColumn = {fg=zephyr.none,bg=zephyr.bg_highlight};
     Conceal = {fg=zephyr.grey,bg=zephyr.none};
     Cursor = {fg=zephyr.none,bg=zephyr.none,style='reverse'};
@@ -93,12 +97,12 @@ function zephyr.load_syntax()
     CursorLine = {fg=zephyr.none,bg=zephyr.bg_highlight};
     LineNr = {fg=zephyr.base4};
     CursorLineNr = {fg=zephyr.blue};
-    DiffAdd = {fg=zephyr.black,bg=zephyr.green};
+    DiffAdd = {fg=zephyr.black,bg=zephyr.dark_green};
     DiffChange = {fg=zephyr.black,bg=zephyr.yellow};
     DiffDelete = {fg=zephyr.black,bg=zephyr.red};
     DiffText = {fg=zephyr.black,bg=zephyr.fg};
     Directory = {fg=zephyr.bg1,bg=zephyr.none};
-    ErrorMsg = {fg=zephyr.dark_red,bg=zephyr.none,style='bold'};
+    ErrorMsg = {fg=zephyr.red,bg=zephyr.none,style='bold'};
     WarningMsg = {fg=zephyr.yellow,bg=zephyr.none,style='bold'};
     ModeMsg = {fg=zephyr.fg,bg=zephyr.none,style='bold'};
     MatchParen = {fg=zephyr.red,bg=zephyr.none};
@@ -108,8 +112,8 @@ function zephyr.load_syntax()
     Pmenu = {fg=zephyr.fg,bg=zephyr.bg_popup};
     PmenuSel = {fg=zephyr.base0,bg=zephyr.blue};
     PmenuSelBold = {fg=zephyr.base0,g=zephyr.blue};
-    PmenuSbar = {fg=zephyr.none,bg=zephyr.blue};
-    PmenuThumb = {fg=zephyr.brown,bg=zephyr.brown};
+    PmenuSbar = {fg=zephyr.none,bg=zephyr.base4};
+    PmenuThumb = {fg=zephyr.violet,bg=zephyr.light_green};
     WildMenu = {fg=zephyr.fg,bg=zephyr.green};
     Question = {fg=zephyr.yellow};
     NormalFloat = {fg=zephyr.base8,bg=zephyr.bg_highlight};
@@ -128,8 +132,8 @@ function zephyr.load_syntax()
     debugBreakpoint = {fg=zephyr.bg,bg=zephyr.red};
 
     Boolean = {fg=zephyr.orange};
-    Number = {fg=zephyr.violet};
-    Float = {fg=zephyr.violet};
+    Number = {fg=zephyr.brown};
+    Float = {fg=zephyr.brown};
     PreProc = {fg=zephyr.violet};
     PreCondit = {fg=zephyr.violet};
     Include = {fg=zephyr.purple};
@@ -151,7 +155,7 @@ function zephyr.load_syntax()
     SpecialChar = {fg=zephyr.yellow};
     Type = {fg=zephyr.yellow};
     Function = {fg=zephyr.yellow};
-    String = {fg=zephyr.brown};
+    String = {fg=zephyr.light_green};
     Character = {fg=zephyr.green};
     Constant = {fg=zephyr.cyan};
     Macro = {fg=zephyr.cyan};
@@ -169,10 +173,10 @@ end
 
 function zephyr.load_plugin_syntax()
   local plugin_syntax = {
-    TSFunction = {fg=zephyr.yellow};
-    TSMethod = {fg=zephyr.yellow};
+    TSFunction = {fg=zephyr.cyan};
+    TSMethod = {fg=zephyr.cyan};
     TSKeywordFunction = {fg=zephyr.red};
-    TSProperty = {fg=zephyr.cyan};
+    TSProperty = {fg=zephyr.yellow};
     TSType = {fg=zephyr.teal};
     TSPunctBracket = {fg=zephyr.bracket};
 
@@ -186,7 +190,7 @@ function zephyr.load_plugin_syntax()
     vimUserFunc = {fg=zephyr.yellow,style='bold'};
     vimFuncName= {fg=zephyr.yellow,style='bold'};
 
-    diffAdded = {fg = zephyr.green};
+    diffAdded = {fg = zephyr.dark_green};
     diffRemoved = {fg =zephyr.red};
     diffChanged = {fg = zephyr.blue};
     diffOldFile = {fg = zephyr.yellow};
@@ -202,50 +206,46 @@ function zephyr.load_plugin_syntax()
     gitcommitUnmerged = { fg=zephyr.grey};
     gitcommitOnBranch = { fg=zephyr.grey};
     gitcommitArrow  = {fg = zephyr.grey};
-    gitcommitFile  = {fg = zephyr.green};
+    gitcommitFile  = {fg = zephyr.dark_green};
 
     VistaBracket = {fg=zephyr.grey};
     VistaChildrenNr = {fg=zephyr.orange};
     VistaKind = {fg=zephyr.purpl};
     VistaScope = {fg=zephyr.red};
     VistaScopeKind = {fg=zephyr.blue};
-    VistaTag = {fg=zephyr.green,style='bold'};
+    VistaTag = {fg=zephyr.purple,style='bold'};
     VistaPrefix = {fg=zephyr.grey};
-    VistaColon = {fg=zephyr.green};
+    VistaColon = {fg=zephyr.purple};
     VistaIcon = {fg=zephyr.yellow};
     VistaLineNr = {fg=zephyr.fg};
 
-    GitGutterAdd = {fg=zephyr.green};
+    GitGutterAdd = {fg=zephyr.dark_green};
     GitGutterChange = {fg=zephyr.blue};
     GitGutterDelete = {fg=zephyr.red};
     GitGutterChangeDelete = {fg=zephyr.violet};
 
-    SignifySignAdd = {fg=zephyr.green};
+    SignifySignAdd = {fg=zephyr.dark_green};
     SignifySignChange = {fg=zephyr.blue};
-    SignifySignDelete = {fg=zephyr.dark_red};
+    SignifySignDelete = {fg=zephyr.red};
 
     dbui_tables = {fg=zephyr.blue};
-
-    DefxIconsParentDirectory = {fg=zephyr.orange};
-    Defx_filename_directory = {fg=zephyr.blue};
-    Defx_filename_root = {fg=zephyr.red};
 
     DashboardShortCut = {fg=zephyr.violet};
     DashboardHeader = {fg=zephyr.orange};
     DashboardCenter = {fg=zephyr.blue};
     DashboardFooter = {fg=zephyr.grey};
 
-    LspDiagnosticsSignError = {fg=zephyr.dark_red};
+    LspDiagnosticsSignError = {fg=zephyr.red};
     LspDiagnosticsSignWarning = {fg=zephyr.yellow};
     LspDiagnosticsSignInformation = {fg=zephyr.blue};
     LspDiagnosticsSignHint = {fg=zephyr.cyan};
 
-    LspDiagnosticsVirtualTextError = {fg=zephyr.dark_red};
+    LspDiagnosticsVirtualTextError = {fg=zephyr.red};
     LspDiagnosticsVirtualTextWarning= {fg=zephyr.yellow};
     LspDiagnosticsVirtualTextInformation = {fg=zephyr.blue};
     LspDiagnosticsVirtualTextHint = {fg=zephyr.cyan};
 
-    LspDiagnosticsUnderlineError = {style="undercurl",sp=zephyr.dark_red};
+    LspDiagnosticsUnderlineError = {style="undercurl",sp=zephyr.red};
     LspDiagnosticsUnderlineWarning = {style="undercurl",sp=zephyr.yellow};
     LspDiagnosticsUnderlineInformation = {style="undercurl",sp=zephyr.blue};
     LspDiagnosticsUnderlineHint = {style="undercurl",sp=zephyr.cyan};
