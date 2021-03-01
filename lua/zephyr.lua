@@ -22,14 +22,14 @@ local zephyr = {
   fg = '#bbc2cf';
   fg_alt  = '#5B6268';
 
-  red = '#c74663';
+  red = '#e95678';
 
   magenta = '#d16d9e';
   orange = '#D98E48';
   yellow = '#f0c674';
 
-  light_green = '#b2c79b';
-  green = '#a0c402';
+  light_green = '#abcf84';
+  green = '#afd700';
   dark_green = '#98be65';
 
   cyan = '#4ad2e0';
