@@ -235,17 +235,17 @@ function zephyr.load_plugin_syntax()
     DashboardCenter = {fg=zephyr.blue};
     DashboardFooter = {fg=zephyr.grey};
 
-    LspDiagnosticsSignError = {fg=zephyr.red};
+    LspDiagnosticsSignError = {fg=zephyr.dark_red};
     LspDiagnosticsSignWarning = {fg=zephyr.yellow};
     LspDiagnosticsSignInformation = {fg=zephyr.blue};
     LspDiagnosticsSignHint = {fg=zephyr.cyan};
 
-    LspDiagnosticsVirtualTextError = {fg=zephyr.red};
+    LspDiagnosticsVirtualTextError = {fg=zephyr.dark_red};
     LspDiagnosticsVirtualTextWarning= {fg=zephyr.yellow};
     LspDiagnosticsVirtualTextInformation = {fg=zephyr.blue};
     LspDiagnosticsVirtualTextHint = {fg=zephyr.cyan};
 
-    LspDiagnosticsUnderlineError = {style="undercurl",sp=zephyr.red};
+    LspDiagnosticsUnderlineError = {style="undercurl",sp=zephyr.dark_red};
     LspDiagnosticsUnderlineWarning = {style="undercurl",sp=zephyr.yellow};
     LspDiagnosticsUnderlineInformation = {style="undercurl",sp=zephyr.blue};
     LspDiagnosticsUnderlineHint = {style="undercurl",sp=zephyr.cyan};
