@@ -13,7 +13,7 @@ local zephyr = {
   base7      = '#9ca0a4';
   base8      = '#b1b1b1';
 
-  bg = '#282c34';
+  bg = '#282a36';
   bg1 = '#504945';
   bg_popup = '#3E4556';
   bg_highlight  = '#2E323C';
