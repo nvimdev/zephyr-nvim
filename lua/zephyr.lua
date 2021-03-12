@@ -136,10 +136,10 @@ function zephyr.load_syntax()
     Float = {fg=zephyr.brown};
     PreProc = {fg=zephyr.violet};
     PreCondit = {fg=zephyr.violet};
-    Include = {fg=zephyr.purple};
+    Include = {fg=zephyr.violet};
     Define = {fg=zephyr.violet};
-    Conditional = {fg=zephyr.violet};
-    Repeat = {fg=zephyr.violet};
+    Conditional = {fg=zephyr.purple};
+    Repeat = {fg=zephyr.purple};
     Keyword = {fg=zephyr.green};
     Typedef = {fg=zephyr.red};
     Exception = {fg=zephyr.red};
