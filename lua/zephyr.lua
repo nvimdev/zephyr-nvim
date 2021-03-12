@@ -230,10 +230,10 @@ function zephyr.load_plugin_syntax()
 
     dbui_tables = {fg=zephyr.blue};
 
-    DashboardShortCut = {fg=zephyr.violet};
+    DashboardShortCut = {fg=zephyr.magenta};
     DashboardHeader = {fg=zephyr.orange};
     DashboardCenter = {fg=zephyr.blue};
-    DashboardFooter = {fg=zephyr.grey};
+    DashboardFooter = {fg=zephyr.bracket,style='bold'};
 
     LspDiagnosticsSignError = {fg=zephyr.red};
     LspDiagnosticsSignWarning = {fg=zephyr.yellow};
