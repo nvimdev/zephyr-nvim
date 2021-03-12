@@ -153,7 +153,7 @@ function zephyr.load_syntax()
     Title = {fg=zephyr.orange,style='bold'};
     Special = {fg=zephyr.yellow};
     SpecialChar = {fg=zephyr.yellow};
-    Type = {fg=zephyr.yellow};
+    Type = {fg=zephyr.teal};
     Function = {fg=zephyr.yellow};
     String = {fg=zephyr.light_green};
     Character = {fg=zephyr.green};
