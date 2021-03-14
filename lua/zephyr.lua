@@ -34,7 +34,7 @@ local zephyr = {
 
   cyan = '#36d0e0';
   blue = '#42a8ed';
-  violet = '#af87d7';
+  violet = '#b294bb';
   magenta = '#c678dd',
   teal = '#1abc9c';
   grey = '#928374';
