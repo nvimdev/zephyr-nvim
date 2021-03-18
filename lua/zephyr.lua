@@ -258,7 +258,11 @@ function zephyr.load_plugin_syntax()
     NvimTreeSpecialFile = {fg=zephyr.fg,bg=zephyr.none,stryle='NONE'};
 
     TelescopeBorder = {fg=zephyr.teal};
-    TelescopePromptBorder = {fg=zephyr.blue}
+    TelescopePromptBorder = {fg=zephyr.blue};
+    TelescopeMatching = {fg=zephyr.teal};
+    TelescopeSelection = {fg=zephyr.yellow,bg=zephyr.bg_highlight,style= 'bold'};
+    TelescopeSelectionCaret = {fg=zephyr.yellow};
+    TelescopeMultiSelection = {fg=zephyr.teal};
   }
   return plugin_syntax
 end
