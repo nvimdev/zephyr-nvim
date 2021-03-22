@@ -253,8 +253,8 @@ function zephyr.load_plugin_syntax()
     CursorWord0 = {bg=zephyr.currsor_bg};
     CursorWord1 = {bg=zephyr.currsor_bg};
 
-    NvimTreeFolderName = {fg=zephyr.bracket};
-    NvimTreeRootFolder = {fg=zephyr.red};
+    NvimTreeFolderName = {fg=zephyr.blue};
+    NvimTreeRootFolder = {fg=zephyr.red,style='bold'};
     NvimTreeSpecialFile = {fg=zephyr.fg,bg=zephyr.none,stryle='NONE'};
 
     TelescopeBorder = {fg=zephyr.teal};
