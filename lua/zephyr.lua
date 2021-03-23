@@ -167,6 +167,11 @@ function zephyr.load_syntax()
     Delimiter = {fg=zephyr.fg};
     Ignore = {fg=zephyr.grey};
     Underlined = {fg=zephyr.none,style='underline'};
+
+    DashboardShortCut = {fg=zephyr.magenta};
+    DashboardHeader = {fg=zephyr.orange};
+    DashboardCenter = {fg=zephyr.blue};
+    DashboardFooter = {fg=zephyr.bracket,style='bold'};
   }
   return syntax
 end
@@ -229,11 +234,6 @@ function zephyr.load_plugin_syntax()
     SignifySignDelete = {fg=zephyr.red};
 
     dbui_tables = {fg=zephyr.blue};
-
-    DashboardShortCut = {fg=zephyr.magenta};
-    DashboardHeader = {fg=zephyr.orange};
-    DashboardCenter = {fg=zephyr.blue};
-    DashboardFooter = {fg=zephyr.bracket,style='bold'};
 
     LspDiagnosticsSignError = {fg=zephyr.red};
     LspDiagnosticsSignWarning = {fg=zephyr.yellow};
