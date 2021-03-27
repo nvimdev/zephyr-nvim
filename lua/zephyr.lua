@@ -33,7 +33,7 @@ local zephyr = {
   dark_green = '#98be65';
 
   cyan = '#36d0e0';
-  blue = '#42a8ed';
+  blue = '#61afef';
   violet = '#b294bb';
   magenta = '#c678dd',
   teal = '#1abc9c';
@@ -167,10 +167,10 @@ function zephyr.load_syntax()
     Delimiter = {fg=zephyr.fg};
     Ignore = {fg=zephyr.grey};
     Underlined = {fg=zephyr.none,style='underline'};
-
-    DashboardShortCut = {fg=zephyr.magenta};
+        
+    DashboardShortCut = {fg=zephyr.teal};
     DashboardHeader = {fg=zephyr.orange};
-    DashboardCenter = {fg=zephyr.blue};
+    DashboardCenter = {fg=zephyr.magenta};
     DashboardFooter = {fg=zephyr.bracket,style='bold'};
   }
   return syntax
