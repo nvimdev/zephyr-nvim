@@ -167,11 +167,11 @@ function zephyr.load_syntax()
     Delimiter = {fg=zephyr.fg};
     Ignore = {fg=zephyr.grey};
     Underlined = {fg=zephyr.none,style='underline'};
-        
-    DashboardShortCut = {fg=zephyr.teal};
+
+    DashboardShortCut = {fg=zephyr.magenta};
     DashboardHeader = {fg=zephyr.orange};
-    DashboardCenter = {fg=zephyr.magenta};
-    DashboardFooter = {fg=zephyr.bracket,style='bold'};
+    DashboardCenter = {fg=zephyr.cyan};
+    DashboardFooter = {fg=zephyr.yellow,style='bold'};
   }
   return syntax
 end
