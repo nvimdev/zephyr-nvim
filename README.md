@@ -16,13 +16,15 @@ Plug 'nvim-treesitter/nvim-treesitter'
 lua require('zephyr')
 ```
 or
+
 ```vim
 colorscheme zephyr
 ```
 
 ```lua
--- a functon that get zephyr color
-lua require('zephyr').get_zephyr_color()
+-- get zephyr color
+local zephyr =  require('zephyr').
+zephyr.yellow/teal/fg/bg
 ```
 ### Preview
 
