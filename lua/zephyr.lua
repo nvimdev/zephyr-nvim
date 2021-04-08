@@ -232,10 +232,12 @@ function zephyr.load_plugin_syntax()
     GitSignsAdd = {fg=zephyr.dark_green};
     GitSignsChange = {fg=zephyr.blue};
     GitSignsDelete = {fg=zephyr.red};
-
-    SignifySignAdd = {fg=zephyr.dark_green};
-    SignifySignChange = {fg=zephyr.blue};
-    SignifySignDelete = {fg=zephyr.red};
+    GitSignsAddNr = {fg=zephyr.dark_green};
+    GitSignsChangeNr = {fg=zephyr.blue};
+    GitSignsDeleteNr = {fg=zephyr.red};
+    GitSignsAddLn = {bg=zephyr.bg_popup};
+    GitSignsChangeLn = {bg=zephyr.bg_highlight};
+    GitSignsDeleteLn = {bg=zephyr.bg1};
 
     dbui_tables = {fg=zephyr.blue};
 
