@@ -239,6 +239,10 @@ function zephyr.load_plugin_syntax()
     GitSignsChangeLn = {bg=zephyr.bg_highlight};
     GitSignsDeleteLn = {bg=zephyr.bg1};
 
+    SignifySignAdd = {fg=zephyr.dark_green};
+    SignifySignChange = {fg=zephyr.blue};
+    SignifySignDelete = {fg=zephyr.red};
+
     dbui_tables = {fg=zephyr.blue};
 
     LspDiagnosticsSignError = {fg=zephyr.red};
