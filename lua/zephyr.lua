@@ -96,12 +96,13 @@ function zephyr.load_syntax()
     CursorColumn = {fg=zephyr.none,bg=zephyr.bg_highlight};
     CursorLine = {fg=zephyr.none,bg=zephyr.bg_highlight};
     LineNr = {fg=zephyr.base4};
+    qfLineNr = {fg=zephyr.cyan};
     CursorLineNr = {fg=zephyr.blue};
     DiffAdd = {fg=zephyr.black,bg=zephyr.dark_green};
     DiffChange = {fg=zephyr.black,bg=zephyr.yellow};
     DiffDelete = {fg=zephyr.black,bg=zephyr.red};
     DiffText = {fg=zephyr.black,bg=zephyr.fg};
-    Directory = {fg=zephyr.cyan,bg=zephyr.none};
+    Directory = {fg=zephyr.blue,bg=zephyr.none};
     ErrorMsg = {fg=zephyr.red,bg=zephyr.none,style='bold'};
     WarningMsg = {fg=zephyr.yellow,bg=zephyr.none,style='bold'};
     ModeMsg = {fg=zephyr.fg,bg=zephyr.none,style='bold'};
