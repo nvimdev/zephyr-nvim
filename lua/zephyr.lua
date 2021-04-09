@@ -101,7 +101,7 @@ function zephyr.load_syntax()
     DiffChange = {fg=zephyr.black,bg=zephyr.yellow};
     DiffDelete = {fg=zephyr.black,bg=zephyr.red};
     DiffText = {fg=zephyr.black,bg=zephyr.fg};
-    Directory = {fg=zephyr.bg1,bg=zephyr.none};
+    Directory = {fg=zephyr.cyan,bg=zephyr.none};
     ErrorMsg = {fg=zephyr.red,bg=zephyr.none,style='bold'};
     WarningMsg = {fg=zephyr.yellow,bg=zephyr.none,style='bold'};
     ModeMsg = {fg=zephyr.fg,bg=zephyr.none,style='bold'};
@@ -117,8 +117,9 @@ function zephyr.load_syntax()
     WildMenu = {fg=zephyr.fg,bg=zephyr.green};
     Question = {fg=zephyr.yellow};
     NormalFloat = {fg=zephyr.base8,bg=zephyr.bg_highlight};
+    Tabline = {fg=zephyr.base6};
     TabLineFill = {style=zephyr.none};
-    TabLineSel = {bg=zephyr.blue};
+    TabLineSel = {fg=zephyr.base6,bg=zephyr.blue};
     StatusLine = {fg=zephyr.base8,bg=zephyr.base2,style=zephyr.none};
     StatusLineNC = {fg=zephyr.grey,bg=zephyr.base2,style=zephyr.none};
     SpellBad = {fg=zephyr.red,bg=zephyr.none,style='undercurl'};
