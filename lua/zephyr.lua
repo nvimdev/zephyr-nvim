@@ -117,9 +117,9 @@ function zephyr.load_syntax()
     WildMenu = {fg=zephyr.fg,bg=zephyr.green};
     Question = {fg=zephyr.yellow};
     NormalFloat = {fg=zephyr.base8,bg=zephyr.bg_highlight};
-    Tabline = {fg=zephyr.base6};
+    Tabline = {fg=zephyr.base6,bg=zephyr.base2};
     TabLineFill = {style=zephyr.none};
-    TabLineSel = {fg=zephyr.base6,bg=zephyr.blue};
+    TabLineSel = {fg=zephyr.fg,bg=zephyr.blue};
     StatusLine = {fg=zephyr.base8,bg=zephyr.base2,style=zephyr.none};
     StatusLineNC = {fg=zephyr.grey,bg=zephyr.base2,style=zephyr.none};
     SpellBad = {fg=zephyr.red,bg=zephyr.none,style='undercurl'};
