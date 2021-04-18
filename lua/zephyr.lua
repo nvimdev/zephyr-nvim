@@ -185,6 +185,7 @@ function zephyr.load_plugin_syntax()
     TSKeywordFunction = {fg=zephyr.red};
     TSProperty = {fg=zephyr.yellow};
     TSType = {fg=zephyr.teal};
+    TSVariable = {fg=zephyr.blue};
     TSPunctBracket = {fg=zephyr.bracket};
 
     vimCommentTitle = {fg=zephyr.grey,style='bold'};
