@@ -65,7 +65,19 @@ function zephyr.terminal_color()
   vim.g.terminal_color_15 = zephyr.fg
 end
 
-function zephyr.highlight(group, color)
+local function get_paths(root, paths)
+	local c = root
+	for _, path in ipairs(paths) do
+		c = c[path]
+		if not c then
+			return nil
+		end
+	end
+	return c
+end
+
+function zephyr.highlight(group, color, config)
+    color = get_paths(config, {'override', group}) or color
     local style = color.style and 'gui=' .. color.style or 'gui=NONE'
     local fg = color.fg and 'guifg=' .. color.fg or 'guifg=NONE'
     local bg = color.bg and 'guibg=' .. color.bg or 'guibg=NONE'
@@ -73,7 +85,6 @@ function zephyr.highlight(group, color)
     vim.api.nvim_command('highlight ' .. group .. ' ' .. style .. ' ' .. fg ..
                              ' ' .. bg..' '..sp)
 end
-
 
 function zephyr.load_syntax()
   local syntax = {
@@ -280,13 +291,22 @@ function zephyr.load_plugin_syntax()
   return plugin_syntax
 end
 
+function zephyr.config()
+  if vim.g.zephyr ~= nil then
+	  return vim.g.zephyr
+  else
+    return {}
+  end
+end
+
 local async_load_plugin
 
 async_load_plugin = vim.loop.new_async(vim.schedule_wrap(function ()
   zephyr.terminal_color()
   local syntax = zephyr.load_plugin_syntax()
+  local config = zephyr.config()
   for group,colors in pairs(syntax) do
-    zephyr.highlight(group,colors)
+    zephyr.highlight(group, colors, config)
   end
   async_load_plugin:close()
 end))
@@ -300,8 +320,9 @@ function zephyr.colorscheme()
   vim.o.termguicolors = true
   vim.g.colors_name = 'zephyr'
   local syntax = zephyr.load_syntax()
+  local config = zephyr.config()
   for group,colors in pairs(syntax) do
-    zephyr.highlight(group,colors)
+    zephyr.highlight(group, colors , config)
   end
   async_load_plugin:send()
 end
