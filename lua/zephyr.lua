@@ -248,6 +248,10 @@ function zephyr.load_plugin_syntax()
 
     dbui_tables = {fg=zephyr.blue};
 
+    LspReferenceRead = {bg=zephyr.bg_highlight};
+    LspReferenceText = {bg=zephyr.bg_highlight};
+    LspReferenceWrite = {bg=zephyr.bg_highlight};
+
     LspDiagnosticsSignError = {fg=zephyr.red};
     LspDiagnosticsSignWarning = {fg=zephyr.yellow};
     LspDiagnosticsSignInformation = {fg=zephyr.blue};
