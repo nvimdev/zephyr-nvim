@@ -268,7 +268,7 @@ function zephyr.load_plugin_syntax()
 
     NvimTreeFolderName = {fg=zephyr.blue};
     NvimTreeRootFolder = {fg=zephyr.red,style='bold'};
-    NvimTreeSpecialFile = {fg=zephyr.fg,bg=zephyr.none,stryle='NONE'};
+    NvimTreeSpecialFile = {fg=zephyr.fg,bg=zephyr.none,style='NONE'};
 
     TelescopeBorder = {fg=zephyr.teal};
     TelescopePromptBorder = {fg=zephyr.blue};
