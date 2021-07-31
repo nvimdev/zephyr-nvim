@@ -256,7 +256,7 @@ function zephyr.load_plugin_syntax()
     LspDiagnosticsFloatingError = {fg=zephyr.red};
     LspDiagnosticsFloatingWarning= {fg=zephyr.yellow};
     LspDiagnosticsFloatingInformation = {fg=zephyr.blue};
-    LspDiagnosticsFloatingtHint = {fg=zephyr.cyan};
+    LspDiagnosticsFloatingtHint = {fg=zephyr.blue};
 
     LspDiagnosticsVirtualTextError = {fg=zephyr.red};
     LspDiagnosticsVirtualTextWarning= {fg=zephyr.yellow};
