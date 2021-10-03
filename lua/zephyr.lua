@@ -267,6 +267,10 @@ function zephyr.load_plugin_syntax()
     LspDiagnosticsUnderlineInformation = {style="undercurl",sp=zephyr.blue};
     LspDiagnosticsUnderlineHint = {style="undercurl",sp=zephyr.cyan};
 
+    LspReferenceRead = {bg=zephyr.bg_highlight,style= 'bold'};
+    LspReferenceText = {bg=zephyr.bg_highlight,style= 'bold'};
+    LspReferenceWrite = {bg=zephyr.bg_highlight,style= 'bold'};
+
     CursorWord0 = {bg=zephyr.currsor_bg};
     CursorWord1 = {bg=zephyr.currsor_bg};
 
