@@ -74,7 +74,6 @@ function zephyr.highlight(group, color)
                              ' ' .. bg..' '..sp)
 end
 
-
 function zephyr.load_syntax()
   local syntax = {
     Normal = {fg = zephyr.fg,bg=zephyr.bg};
@@ -115,7 +114,7 @@ function zephyr.load_syntax()
     PmenuSelBold = {fg=zephyr.base0,g=zephyr.blue};
     PmenuSbar = {fg=zephyr.none,bg=zephyr.base4};
     PmenuThumb = {fg=zephyr.violet,bg=zephyr.light_green};
-    WildMenu = {fg=zephyr.fg,bg=zephyr.green};
+    WildMenu = {fg=zephyr.bg1,bg=zephyr.green};
     Question = {fg=zephyr.yellow};
     NormalFloat = {fg=zephyr.base8,bg=zephyr.bg_highlight};
     Tabline = {fg=zephyr.base6,bg=zephyr.base2};
@@ -268,12 +267,16 @@ function zephyr.load_plugin_syntax()
     LspDiagnosticsUnderlineInformation = {style="undercurl",sp=zephyr.blue};
     LspDiagnosticsUnderlineHint = {style="undercurl",sp=zephyr.cyan};
 
+    LspReferenceRead = {bg=zephyr.bg_highlight,style= 'bold'};
+    LspReferenceText = {bg=zephyr.bg_highlight,style= 'bold'};
+    LspReferenceWrite = {bg=zephyr.bg_highlight,style= 'bold'};
+
     CursorWord0 = {bg=zephyr.currsor_bg};
     CursorWord1 = {bg=zephyr.currsor_bg};
 
     NvimTreeFolderName = {fg=zephyr.blue};
     NvimTreeRootFolder = {fg=zephyr.red,style='bold'};
-    NvimTreeSpecialFile = {fg=zephyr.fg,bg=zephyr.none,stryle='NONE'};
+    NvimTreeSpecialFile = {fg=zephyr.fg,bg=zephyr.none,style='NONE'};
 
     TelescopeBorder = {fg=zephyr.teal};
     TelescopePromptBorder = {fg=zephyr.blue};
@@ -281,6 +284,22 @@ function zephyr.load_plugin_syntax()
     TelescopeSelection = {fg=zephyr.yellow,bg=zephyr.bg_highlight,style= 'bold'};
     TelescopeSelectionCaret = {fg=zephyr.yellow};
     TelescopeMultiSelection = {fg=zephyr.teal};
+
+    -- nvim v0.6.0+
+    DiagnosticSignError = {fg=zephyr.red};
+    DiagnosticSignWarn = {fg=zephyr.yellow};
+    DiagnosticSignInfo = {fg=zephyr.blue};
+    DiagnosticSignHint = {fg=zephyr.cyan};
+
+    DiagnosticVirtualTextError = {fg=zephyr.red};
+    DiagnosticVirtualTextWarn = {fg=zephyr.yellow};
+    DiagnosticVirtualTextInfo = {fg=zephyr.blue};
+    DiagnosticVirtualTextHint = {fg=zephyr.cyan};
+
+    DiagnosticUnderlineError = {style="undercurl",sp=zephyr.red};
+    DiagnosticUnderlineWarn = {style="undercurl",sp=zephyr.yellow};
+    DiagnosticUnderlineInfo = {style="undercurl",sp=zephyr.blue};
+    DiagnosticUnderlineHint = {style="undercurl",sp=zephyr.cyan};
   }
   return plugin_syntax
 end
