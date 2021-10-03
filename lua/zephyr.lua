@@ -74,7 +74,6 @@ function zephyr.highlight(group, color)
                              ' ' .. bg..' '..sp)
 end
 
-
 function zephyr.load_syntax()
   local syntax = {
     Normal = {fg = zephyr.fg,bg=zephyr.bg};
@@ -281,6 +280,22 @@ function zephyr.load_plugin_syntax()
     TelescopeSelection = {fg=zephyr.yellow,bg=zephyr.bg_highlight,style= 'bold'};
     TelescopeSelectionCaret = {fg=zephyr.yellow};
     TelescopeMultiSelection = {fg=zephyr.teal};
+
+    -- nvim v0.6.0+
+    DiagnosticSignError = {fg=zephyr.red};
+    DiagnosticSignWarn = {fg=zephyr.yellow};
+    DiagnosticSignInfo = {fg=zephyr.blue};
+    DiagnosticSignHint = {fg=zephyr.cyan};
+
+    DiagnosticVirtualTextError = {fg=zephyr.red};
+    DiagnosticVirtualTextWarn = {fg=zephyr.yellow};
+    DiagnosticVirtualTextInfo = {fg=zephyr.blue};
+    DiagnosticVirtualTextHint = {fg=zephyr.cyan};
+
+    DiagnosticUnderlineError = {style="undercurl",sp=zephyr.red};
+    DiagnosticUnderlineWarn = {style="undercurl",sp=zephyr.yellow};
+    DiagnosticUnderlineInfo = {style="undercurl",sp=zephyr.blue};
+    DiagnosticUnderlineHint = {style="undercurl",sp=zephyr.cyan};
   }
   return plugin_syntax
 end
