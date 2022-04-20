@@ -1,3 +1,3 @@
 (nil) @boolean
-(table ["{" "}"] @punctuation.bracket)
+(table_constructor ["{" "}"] @punctuation.bracket)
 (field (identifier) @type)
