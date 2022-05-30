@@ -28,4 +28,4 @@ zephyr.yellow/teal/fg/bg
 ```
 ### Preview
 
-![zephyr](https://user-images.githubusercontent.com/41671631/110207650-e291ee80-7ebf-11eb-813d-305fee299322.png)
+![zephyr](https://user-images.githubusercontent.com/41671631/170997163-650c7ada-fb4f-4c2b-9e17-3398b271a575.png)
