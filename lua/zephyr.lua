@@ -25,7 +25,7 @@ local zephyr = {
   red = '#e95678';
 
   redwine = '#d16d9e';
-  orange = '#D98E48';
+  orange = '#de841b';
   yellow = '#f0c674';
 
   light_green = '#abcf84';
@@ -195,7 +195,7 @@ function zephyr.load_plugin_syntax()
     TSKeywordFunction = {fg=zephyr.red};
     TSProperty = {fg=zephyr.yellow};
     TSType = {fg=zephyr.teal};
-    TSVariable = {fg=zephyr.blue};
+    TSVariable = {fg='#e8e8c6'};
     TSPunctBracket = {fg=zephyr.bracket};
 
     vimCommentTitle = {fg=zephyr.grey,style='bold'};
@@ -312,6 +312,12 @@ function zephyr.load_plugin_syntax()
     DiagnosticUnderlineWarn = {style="undercurl",sp=zephyr.yellow};
     DiagnosticUnderlineInfo = {style="undercurl",sp=zephyr.blue};
     DiagnosticUnderlineHint = {style="undercurl",sp=zephyr.cyan};
+
+    -- nvim-cmp
+    CmpItemAbbr = {fg=zephyr.base7};
+    CmpItemAbbrMatch = {fg='#A6E22E',style='bold'};
+    CmpItemKind = {fg=zephyr.violet,style='bold'};
+    CmpItemMenu = {fg=zephyr.cyan,style='bold'}
   }
   return plugin_syntax
 end
