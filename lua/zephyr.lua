@@ -1,5 +1,5 @@
 -- Theme: zephyr
--- Author: Glepnir
+-- Author: glepnir
 -- License: MIT
 -- Source: http://github.com/glepnir/zephyr-nvim
 local zephyr = {
@@ -195,7 +195,7 @@ function zephyr.load_plugin_syntax()
     TSKeywordFunction = {fg=zephyr.red};
     TSProperty = {fg=zephyr.yellow};
     TSType = {fg=zephyr.teal};
-    TSVariable = {fg='#e8e8c6'};
+    TSVariable = {fg='#f2f2bf'};
     TSPunctBracket = {fg=zephyr.bracket};
 
     vimCommentTitle = {fg=zephyr.grey,style='bold'};
@@ -289,6 +289,7 @@ function zephyr.load_plugin_syntax()
     NvimTreeFolderName = {fg=zephyr.blue};
     NvimTreeRootFolder = {fg=zephyr.red,style='bold'};
     NvimTreeSpecialFile = {fg=zephyr.fg,bg=zephyr.none,style='NONE'};
+    NvimTreeGitDirty = {fg=zephyr.redwine};
 
     TelescopeBorder = {fg=zephyr.teal};
     TelescopePromptBorder = {fg=zephyr.blue};
