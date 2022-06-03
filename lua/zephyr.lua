@@ -13,7 +13,7 @@ local zephyr = {
   base7      = '#9ca0a4';
   base8      = '#b1b1b1';
 
-  bg = '#282a36';
+  bg = '#262a33';
   bg1 = '#504945';
   bg_popup = '#3E4556';
   bg_highlight  = '#2E323C';
@@ -202,7 +202,7 @@ function zephyr.load_plugin_syntax()
     diffChanged = {fg = zephyr.blue};
     diffOldFile = {fg = zephyr.yellow};
     diffNewFile = {fg = zephyr.orange};
-    diffFile    = {fg = zephyr.aqua};
+    diffFile    = {fg = zephyr.cyan};
     diffLine    = {fg = zephyr.grey};
     diffIndexLine = {fg = zephyr.violet};
 
@@ -217,7 +217,7 @@ function zephyr.load_plugin_syntax()
 
     VistaBracket = {fg=zephyr.grey};
     VistaChildrenNr = {fg=zephyr.orange};
-    VistaKind = {fg=zephyr.purpl};
+    VistaKind = {fg=zephyr.violet};
     VistaScope = {fg=zephyr.red};
     VistaScopeKind = {fg=zephyr.blue};
     VistaTag = {fg=zephyr.magenta,style='bold'};
@@ -304,10 +304,16 @@ function zephyr.load_plugin_syntax()
     DiagnosticUnderlineHint = {style="undercurl",sp=zephyr.cyan};
 
     -- nvim-cmp
-    CmpItemAbbr = {fg=zephyr.base7};
+    CmpItemAbbr = {fg=zephyr.fg};
     CmpItemAbbrMatch = {fg='#A6E22E',style='bold'};
-    CmpItemKind = {fg=zephyr.violet,style='bold'};
-    CmpItemMenu = {fg=zephyr.cyan,style='bold'}
+    CmpItemMenu = {fg=zephyr.violet};
+    CmpItemKindVariable = {fg=zephyr.blue};
+    CmpItemKindFunction = {fg=zephyr.yellow},
+    CmpItemKindClass = {fg=zephyr.orange},
+    CmpItemKindMethod = {fg=zephyr.teal},
+    CmpItemKindKeyWord = {fg=zephyr.red},
+    CmpItemKindText = {fg=zephyr.light_green},
+    CmpItemKindModule = {fg=zephyr.cyan}
   }
   return plugin_syntax
 end
