@@ -271,9 +271,7 @@ function zephyr.load_plugin_syntax()
     LspReferenceText = {bg=zephyr.bg_highlight,style= 'bold'};
     LspReferenceWrite = {bg=zephyr.bg_highlight,style= 'bold'};
 
-    CursorWord = {bg=zephyr.base4};
-    CursorWord0 = {bg=zephyr.base4};
-    CursorWord1 = {bg=zephyr.base4};
+    CursorWord = {bg=zephyr.base4,style='underline'};
 
     NvimTreeFolderName = {fg=zephyr.blue};
     NvimTreeRootFolder = {fg=zephyr.red,style='bold'};
