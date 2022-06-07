@@ -34,7 +34,7 @@ local z = {
 
   cyan = '#36d0e0',
   blue = '#61afef',
-  violet = '#b294bb',
+  violet = '#CBA6F7',
   magenta = '#c678dd',
   teal = '#1abc9c',
   grey = '#928374',
@@ -291,6 +291,7 @@ local plugin_syntax = {
   CmpItemAbbrMatch = {fg='#A6E22E'},
   CmpItemMenu = {fg=z.violet},
   CmpItemKindVariable = {fg=z.blue},
+  CmpItemKindFiled = {fg=z.magenta},
   CmpItemKindFunction = {fg=z.yellow},
   CmpItemKindClass = {fg=z.orange},
   CmpItemKindMethod = {fg=z.teal},
