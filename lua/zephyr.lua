@@ -23,15 +23,12 @@ local z = {
   fg_alt  = '#5B6268',
 
   red = '#e95678',
-
   redwine = '#d16d9e',
-  orange = '#de841b',
+  orange = '#FF8700',
   yellow = '#fac661',
-
   light_green = '#abcf84',
   green = '#afd700',
   dark_green = '#98be65',
-
   cyan = '#36d0e0',
   blue = '#61afef',
   violet = '#CBA6F7',
@@ -159,7 +156,8 @@ local syntax = {
 
   DashboardShortCut = {fg=z.magenta},
   DashboardHeader = {fg=z.orange},
-  DashboardCenter = {fg=z.cyan},
+  DashboardCenter = {fg=z.teal},
+  DashboardCenterIcon = {fg=z.blue},
   DashboardFooter = {fg=z.yellow,bold = true},
 }
 
