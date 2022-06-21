@@ -33,7 +33,7 @@ local z = {
   dark_green = '#98be65',
 
   cyan = '#36d0e0',
-  blue = '#61afef',
+  blue = '#3696f6',
   violet = '#CBA6F7',
   magenta = '#c678dd',
   teal = '#1abc9c',
@@ -169,7 +169,7 @@ local plugin_syntax = {
   TSKeywordFunction = {fg=z.red},
   TSProperty = {fg=z.yellow},
   TSType = {fg=z.teal},
-  TSVariable = {fg='#f2f2bf'},
+  TSVariable = {fg='#f2c43b'},
   TSPunctBracket = {fg=z.bracket},
 
   vimCommentTitle = {fg=z.grey,bold=true},
