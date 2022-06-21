@@ -60,7 +60,7 @@ Plug 'nvim-treesitter/nvim-treesitter'
 
 ```lua
 use({
-  'glepnir/galaxyline.nvim',
+  'glepnir/zephyr-nvim',
   requires = { 'nvim-treesitter/nvim-treesitter', opt = true },
 })
 ```
