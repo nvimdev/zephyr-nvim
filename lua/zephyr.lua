@@ -169,7 +169,7 @@ local plugin_syntax = {
   TSKeywordFunction = {fg=z.red},
   TSProperty = {fg=z.yellow},
   TSType = {fg=z.teal},
-  TSVariable = {fg='#f2f2bf'},
+  TSVariable = {fg='#bfbfbf'},
   TSPunctBracket = {fg=z.bracket},
 
   vimCommentTitle = {fg=z.grey,bold=true},
