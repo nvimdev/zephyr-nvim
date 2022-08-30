@@ -164,6 +164,7 @@ local syntax = {
 }
 
 local plugin_syntax = {
+	TSComment = { fg = z.base6, italic = true },
 	TSFunction = { fg = z.cyan },
 	TSMethod = { fg = z.cyan },
 	TSKeywordFunction = { fg = z.red },
@@ -216,15 +217,15 @@ local plugin_syntax = {
 	GitGutterDelete = { fg = z.red },
 	GitGutterChangeDelete = { fg = z.violet },
 
-	GitSignsAdd = { fg = z.dark_green },
-	GitSignsChange = { fg = z.blue },
-	GitSignsDelete = { fg = z.red },
-	GitSignsAddNr = { fg = z.dark_green },
-	GitSignsChangeNr = { fg = z.blue },
-	GitSignsDeleteNr = { fg = z.red },
-	GitSignsAddLn = { bg = z.bg_popup },
-	GitSignsChangeLn = { bg = z.bg_highlight },
-	GitSignsDeleteLn = { bg = z.bg1 },
+	GitSignsAdd = { fg = z.dark_green, bg = z.bg },
+	GitSignsChange = { fg = z.blue, bg = z.bg },
+	GitSignsDelete = { fg = z.red, bg = z.bg },
+	GitSignsAddNr = { fg = z.dark_green, bg = z.bg },
+	GitSignsChangeNr = { fg = z.blue, bg = z.bg },
+	GitSignsDeleteNr = { fg = z.red, bg = z.bg },
+	GitSignsAddLn = { fg = z.dark_green, bg = z.bg },
+	GitSignsChangeLn = { fg = z.blue, bg = z.bg },
+	GitSignsDeleteLn = { fg = z.red, bg = z.bg },
 
 	SignifySignAdd = { fg = z.dark_green },
 	SignifySignChange = { fg = z.blue },
