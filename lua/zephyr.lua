@@ -28,7 +28,7 @@ local z = {
 	yellow = "#f7bb3b",
 	lignt_orange = "#fab795",
 	green = "#afd700",
-  -- #a8eb44
+	-- #a8eb44
 	dark_green = "#98be65",
 	cyan = "#36d0e0",
 	blue = "#61afef",
@@ -148,7 +148,7 @@ local syntax = {
 	Macro = { fg = z.cyan },
 	Identifier = { fg = z.blue },
 
-	Comment = { fg = z.base6 ,italic = true},
+	Comment = { fg = z.base6, italic = true },
 	SpecialComment = { fg = z.grey },
 	Todo = { fg = z.violet },
 	Delimiter = { fg = z.fg },
@@ -159,17 +159,17 @@ local syntax = {
 	DashboardHeader = { fg = z.orange },
 	DashboardCenter = { fg = z.teal },
 	DashboardCenterIcon = { fg = z.blue },
-	DashboardFooter = { fg = z.yellow, bold = true},
+	DashboardFooter = { fg = z.yellow, bold = true },
 }
 
 local plugin_syntax = {
-	TSFunction = { fg = z.cyan},
-	TSMethod = { fg = z.cyan },
-	TSKeywordFunction = { fg = z.red},
-	TSProperty = { fg = z.yellow },
-	TSType = { fg = z.teal },
-	TSVariable = { fg = "#f2f2bf" },
-	TSPunctBracket = { fg = z.bracket },
+	["@function"] = { fg = z.cyan },
+	["@method"] = { fg = z.cyan },
+	["@keyword.function"] = { fg = z.red },
+	["@property"] = { fg = z.yellow },
+	["@type"] = { fg = z.teal },
+	["@variable"] = { fg = "#f2f2bf" },
+	["@punctuation.bracket"] = { fg = z.bracket },
 
 	vimCommentTitle = { fg = z.grey, bold = true },
 	vimLet = { fg = z.orange },
